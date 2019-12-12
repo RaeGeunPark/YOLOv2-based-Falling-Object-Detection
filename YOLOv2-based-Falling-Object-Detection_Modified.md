@@ -129,7 +129,6 @@ Anchor
     Anchor를 각 3단계로 나누어 9개의 state 생성
 
     생성된 변수는 box의 위치변화와 독립적인 특성
-<img src="https://user-images.githubusercontent.com/48273766/70639112-56255b80-1c7d-11ea-9f0d-300a4265d0ec.png">
 
 <img src= "https://user-images.githubusercontent.com/48273766/70639180-7523ed80-1c7d-11ea-8072-ca626ef100c0.png">
 
