@@ -206,6 +206,12 @@ Anchor
 ![14](https://user-images.githubusercontent.com/48272857/70619945-57dd2800-1c59-11ea-80e8-1302f1b73f03.png)
 
 ![15](https://user-images.githubusercontent.com/48272857/70619949-5875be80-1c59-11ea-9a2f-b6bfe5664b91.png)
+https://user-images.githubusercontent.com/48273766/70688986-62013400-1cf6-11ea-878b-d1dcd1a4e7b5.png
+
+* 서버 IP로 변경
+
+![16](https://user-images.githubusercontent.com/48273766/70689066-97a61d00-1cf6-11ea-8bf7-1ae094461037.png)
+
 
 ### 제한된 Preprocessing
 - 배경이 도로인 낙하물data를 수집
