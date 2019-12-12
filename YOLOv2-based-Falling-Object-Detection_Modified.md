@@ -206,7 +206,6 @@ Anchor
 ![14](https://user-images.githubusercontent.com/48272857/70619945-57dd2800-1c59-11ea-80e8-1302f1b73f03.png)
 
 ![15](https://user-images.githubusercontent.com/48272857/70619949-5875be80-1c59-11ea-9a2f-b6bfe5664b91.png)
-https://user-images.githubusercontent.com/48273766/70688986-62013400-1cf6-11ea-878b-d1dcd1a4e7b5.png
 
 * 서버 IP로 변경
 
@@ -564,7 +563,7 @@ else
 ## 12. Postprocessing
 - ROI 지정
 
-낙하물이 도로 바닥을 제외한 공중에 있는 경우는 불가능하여 BoundingBox의 좌표가 영상 프레임 중 Image_heights/2 보다 작은 곳에서 잡히는 낙하물로 분류하지 않는다.
+낙하물이 도로 바닥을 제외한 공중에 있는 경우는 불가능하여 BoundingBox의 좌표가 영상 프레임 중 Image_heights/3 보다 작은 곳에서 잡히는 낙하물로 분류하지 않는다.
 
 - Size 제한
 
@@ -579,7 +578,7 @@ else
 
 - Postprocessing
 ```
-if (rect_size>= rect_size_min && rect_size <= rect_size_max && rect_acc>=0 && pt2.y>=show_img->rows/2 && pt1.x>=0 && (strstr(labelstr, "Obstacle") != NULL))
+if (rect_size>= rect_size_min && rect_size <= rect_size_max && rect_acc>=0 && pt2.y>=show_img->rows/3 && pt1.x>=0 && (strstr(labelstr, "Obstacle") != NULL))
 {
     strcat(labelstr, " dist: ");
     char c_predict_dist[20];
@@ -620,7 +619,7 @@ if (rect_size>= rect_size_min && rect_size <= rect_size_max && rect_acc>=0 && pt
 
 - 실험 환경
 
-103장의 Training Dataset외의 사진을 이용하여 실험을 진행한다.
+103장의 사진을 이용하여 실험을 진행한다.
 103장내에서 발생하는 성능을 측정하여 결과를 도출한다.
 
 - 성능
