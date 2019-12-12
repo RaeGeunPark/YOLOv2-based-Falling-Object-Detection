@@ -55,75 +55,6 @@ Reference: https://journals.sagepub.com/doi/pdf/10.5772/55951
 <img src="https://user-images.githubusercontent.com/48273766/70630565-21120c80-1c6f-11ea-8747-69d732daa97a.png">
 
 
-# YOLO 설치방법
-## 원본 코드
-* https://github.com/AlexeyAB/darknet/
-
-* 솔루션 우클릭
-
-![1](https://user-images.githubusercontent.com/48272857/70619898-4a27a280-1c59-11ea-90d5-7cb4a1f3abe5.png)
-
-* 빌드 종속성 -> 사용자 빌드 선택
-
-![2](https://user-images.githubusercontent.com/48272857/70619903-4bf16600-1c59-11ea-9e80-e5aaddc4d62f.png)
-
-* CUDA 선택
-
-![3](https://user-images.githubusercontent.com/48272857/70619914-4dbb2980-1c59-11ea-83e5-0fcf59f712ea.png)
-
-* 프로젝트 -> 속성
-
-![4](https://user-images.githubusercontent.com/48272857/70619916-4e53c000-1c59-11ea-90f1-cd21caf811b7.png)
-
-* Release x64 -> C/C++ 일반 -> 추가 포함 디렉터리 -> opencv 경로 설정
-
-![5](https://user-images.githubusercontent.com/48272857/70619919-4f84ed00-1c59-11ea-98b2-e4996c7e6917.png)
-
-![6](https://user-images.githubusercontent.com/48272857/70619925-50b61a00-1c59-11ea-8430-5e16597033f5.png)
-
-* 링커 -> 일반 -> 추가 라이브러리 디렉터리 -> opencv lib 경로 추가
-
-![7](https://user-images.githubusercontent.com/48272857/70619926-514eb080-1c59-11ea-9ed1-821d7887bb65.png)
-
-![8](https://user-images.githubusercontent.com/48272857/70619930-53187400-1c59-11ea-8f92-06914db6021d.png)
-
-* darknet.c
-
-![9](https://user-images.githubusercontent.com/48272857/70619931-53b10a80-1c59-11ea-866b-0bb2cc8213f2.png)
-
-* 다음 코드 추가
-
-```
-    argv[0] = "darknet.exe";
-    argv[1] = "detector";
-    argv[2] = "demo";
-    argv[3] = "D:/cuda 설치/darknet-masterE1211/build/darknet/x64/data/obj3.data";
-    argv[4] = "D:/cuda 설치/darknet-masterE1211/build/darknet/x64/yolo-obj3.cfg";
-    argv[5] = "D:/cuda 설치/darknet-masterE1211/build/darknet/x64/yolo-obj_100000.weights";
-    argv[6] = "-c";
-    argv[7] = "0";
-    argc = 8;
-```
-
-![10](https://user-images.githubusercontent.com/48272857/70619936-54e23780-1c59-11ea-8299-c9d538692c38.png)
-
-* 설치된 경로로 변경
-  
-![11](https://user-images.githubusercontent.com/48272857/70619939-557ace00-1c59-11ea-9499-7fbc21f0fc3f.png)
-
-* image.c
-* data폴더내에 있는 obj.names의 경로로 우선 입력해본 뒤 입력이 실행이 되지 않을 경우
-한글 폴더명이 없는 곳에 이동 후 해당 경로로 입력
-
-![12](https://user-images.githubusercontent.com/48272857/70619940-56136480-1c59-11ea-906e-8351409fa065.png)
-
-![13](https://user-images.githubusercontent.com/48272857/70619942-56abfb00-1c59-11ea-803f-7dae2d28c9ea.png)
-
-* obj3.data 실행
-  
-![14](https://user-images.githubusercontent.com/48272857/70619945-57dd2800-1c59-11ea-80e8-1302f1b73f03.png)
-
-![15](https://user-images.githubusercontent.com/48272857/70619949-5875be80-1c59-11ea-9a2f-b6bfe5664b91.png)
 
 
 ### Training Routine
@@ -206,6 +137,75 @@ Anchor
 
 <img src="https://user-images.githubusercontent.com/48273766/70639271-997fca00-1c7d-11ea-8ddd-46bfab255cc6.png">
 
+# YOLO 설치방법
+## 원본 코드
+* https://github.com/AlexeyAB/darknet/
+
+* 솔루션 우클릭
+
+![1](https://user-images.githubusercontent.com/48272857/70619898-4a27a280-1c59-11ea-90d5-7cb4a1f3abe5.png)
+
+* 빌드 종속성 -> 사용자 빌드 선택
+
+![2](https://user-images.githubusercontent.com/48272857/70619903-4bf16600-1c59-11ea-9e80-e5aaddc4d62f.png)
+
+* CUDA 선택
+
+![3](https://user-images.githubusercontent.com/48272857/70619914-4dbb2980-1c59-11ea-83e5-0fcf59f712ea.png)
+
+* 프로젝트 -> 속성
+
+![4](https://user-images.githubusercontent.com/48272857/70619916-4e53c000-1c59-11ea-90f1-cd21caf811b7.png)
+
+* Release x64 -> C/C++ 일반 -> 추가 포함 디렉터리 -> opencv 경로 설정
+
+![5](https://user-images.githubusercontent.com/48272857/70619919-4f84ed00-1c59-11ea-98b2-e4996c7e6917.png)
+
+![6](https://user-images.githubusercontent.com/48272857/70619925-50b61a00-1c59-11ea-8430-5e16597033f5.png)
+
+* 링커 -> 일반 -> 추가 라이브러리 디렉터리 -> opencv lib 경로 추가
+
+![7](https://user-images.githubusercontent.com/48272857/70619926-514eb080-1c59-11ea-9ed1-821d7887bb65.png)
+
+![8](https://user-images.githubusercontent.com/48272857/70619930-53187400-1c59-11ea-8f92-06914db6021d.png)
+
+* darknet.c
+
+![9](https://user-images.githubusercontent.com/48272857/70619931-53b10a80-1c59-11ea-866b-0bb2cc8213f2.png)
+
+* 다음 코드 추가
+
+```
+    argv[0] = "darknet.exe";
+    argv[1] = "detector";
+    argv[2] = "demo";
+    argv[3] = "D:/cuda 설치/darknet-masterE1211/build/darknet/x64/data/obj3.data";
+    argv[4] = "D:/cuda 설치/darknet-masterE1211/build/darknet/x64/yolo-obj3.cfg";
+    argv[5] = "D:/cuda 설치/darknet-masterE1211/build/darknet/x64/yolo-obj_100000.weights";
+    argv[6] = "-c";
+    argv[7] = "0";
+    argc = 8;
+```
+
+![10](https://user-images.githubusercontent.com/48272857/70619936-54e23780-1c59-11ea-8299-c9d538692c38.png)
+
+* 설치된 경로로 변경
+  
+![11](https://user-images.githubusercontent.com/48272857/70619939-557ace00-1c59-11ea-9499-7fbc21f0fc3f.png)
+
+* image.c
+* data폴더내에 있는 obj.names의 경로로 우선 입력해본 뒤 입력이 실행이 되지 않을 경우
+한글 폴더명이 없는 곳에 이동 후 해당 경로로 입력
+
+![12](https://user-images.githubusercontent.com/48272857/70619940-56136480-1c59-11ea-906e-8351409fa065.png)
+
+![13](https://user-images.githubusercontent.com/48272857/70619942-56abfb00-1c59-11ea-803f-7dae2d28c9ea.png)
+
+* obj3.data 실행
+  
+![14](https://user-images.githubusercontent.com/48272857/70619945-57dd2800-1c59-11ea-80e8-1302f1b73f03.png)
+
+![15](https://user-images.githubusercontent.com/48272857/70619949-5875be80-1c59-11ea-9a2f-b6bfe5664b91.png)
 
 ### 제한된 Preprocessing
 - 배경이 도로인 낙하물data를 수집
