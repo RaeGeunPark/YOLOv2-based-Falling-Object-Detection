@@ -101,6 +101,7 @@ SS에서 검출한 영역에 대해 개별 검사 진행
 <brbr>
 
 - Faster R-CNN
+
 영상 전체를 feature map으로 변환 후 해당 영역에 대한 검출 진행
 
 Feature map의 경우 기존 영상보다 작아 범위 설정이 어려움
