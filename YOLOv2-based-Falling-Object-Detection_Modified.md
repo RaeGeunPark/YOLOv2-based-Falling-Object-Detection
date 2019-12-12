@@ -614,7 +614,7 @@ if (rect_size>= rect_size_min && rect_size <= rect_size_max && rect_acc>=0 && pt
 
 103장의 Training Dataset외의 사진을 이용하여 실험을 진행한다.
 103장내에서 발생하는 성능을 측정하여 결과를 도출한다.
-
+<img scr="https://user-images.githubusercontent.com/48273766/70679181-b812af00-1cd7-11ea-8da8-ff2d12a698a7.png">
 
 -차량을 이용한 실험
 
