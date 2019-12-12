@@ -496,12 +496,14 @@ Iteration 19000
 
 ## 8. Iteration 증가
 <img src="https://user-images.githubusercontent.com/48273766/70602966-f0af7b80-1c38-11ea-80ed-44e155d92fd9.jpg">
+300장 기준(Augmentation 미적용)
 
-Iteration의 증가에 따랄 정확도 개선이 가능하며 일정 시점이상에서 정확도가 증가하지 않는 부분은  Overfitting이 시작하는 구간이다. 해당 구간 근처의 weights를 이용하여 실험을 통한 Overfitting이 되지 않는 weights를 선별해야 한다.
+Iteration의 증가에 따라 정확도 개선이 가능하며 일정 시점이상에서 정확도가 증가하지 않는 부분은  Overfitting이 시작하는 구간이다. 해당 구간 근처의 weights를 이용하여 실험을 통한 Overfitting이 되지 않는 weights를 선별해야 한다.
 
 - 최종 Training 결과
 
 <img src="https://user-images.githubusercontent.com/48273766/70607090-2a848000-1c41-11ea-8350-9a1d40280a43.jpg">
+약 13000장 기준(Augmentation 적용)
 
 ## 9. Bounding Box 비교
 
@@ -616,6 +618,12 @@ if (rect_size>= rect_size_min && rect_size <= rect_size_max && rect_acc>=0 && pt
 103장내에서 발생하는 성능을 측정하여 결과를 도출한다.
 
 - 성능
+
+Accuracy: True를 True라고 예측한 경우와 False를 False라고 예측한 경우에 대한 지표
+
+Precision: 모델이 True라고 분류한 것 중에서 실제 True인 것의 비율
+
+Recall: 실제 True인 것 중에서 모델이 True라고 예측한 것의 비율
 
 <img src="https://user-images.githubusercontent.com/48273766/70679181-b812af00-1cd7-11ea-8da8-ff2d12a698a7.png">
 
