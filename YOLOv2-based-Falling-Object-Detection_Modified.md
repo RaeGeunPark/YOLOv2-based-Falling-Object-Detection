@@ -55,12 +55,10 @@ Reference: https://journals.sagepub.com/doi/pdf/10.5772/55951
 <img src="https://user-images.githubusercontent.com/48273766/70630565-21120c80-1c6f-11ea-8747-69d732daa97a.png">
 
 
-
+[YOLOv2 vs YOLOv3] https://youtu.be/xnxlmeaE86s
 
 ### Training Routine
 <img src="https://user-images.githubusercontent.com/48273766/70630092-51a57680-1c6e-11ea-8b5b-3fce7f6a6660.png">
-
-[YOLOv2 vs YOLOv3] https://youtu.be/xnxlmeaE86s
 
 ### YOLO
 - Region with Convolutional Neural Network
