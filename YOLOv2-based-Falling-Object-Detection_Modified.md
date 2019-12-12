@@ -138,8 +138,8 @@ Anchor
 <img src="https://user-images.githubusercontent.com/48273766/70639271-997fca00-1c7d-11ea-8ddd-46bfab255cc6.png">
 
 # YOLO 설치방법
-## 원본 코드
-* https://github.com/AlexeyAB/darknet/
+## 코드
+* https://sangmyungkr-my.sharepoint.com/:u:/g/personal/201521252_sangmyung_kr/EX6ppq2nVOlLjATiAOccZaQBKfXkInJxCLtqwKbrHsS7EA?e=6vNKRr
 
 * 솔루션 우클릭
 
